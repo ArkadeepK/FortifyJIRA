@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/aspectjlib-1.5.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/aspectjrt-1.5.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/aspectjtools-1.5.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/aspectjweaver-1.5.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/axis-1.3-atlassian-1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/axis-jaxrpc-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/axis-saaj-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/commons-logging-adapters-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/commons-logging-api-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/fortify-public-4.30.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/jira-soapclient-4.3-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/junit-4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kundua4/Desktop/WorkSpace/Fortify-JIRA/lib/wsdl4j-1.6.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

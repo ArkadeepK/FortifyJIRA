@@ -1,0 +1,46 @@
+HP Fortify Software Security Center Extension Sample : JIRA 4 Defect Tracking Integration
+
+
+-------------
+ABOUT
+-------------
+This sample demonstrates an implementation of the Bug Tracker interface for HP Fortify Software Security Center (SSC).
+The interface exists as an extension point to allow end users to customize the integration between SSC
+and defect tracking systems.  This allows for users to use the GUI to easily push the found defects into the
+an external defect tracking system.
+
+The sample implementation provides an example of how the defect tracking can be performed by delegating the
+request to the server, from there the server makes the appropriate calls to the external defect tracking
+systems.
+
+
+-------------
+REQUIREMENTS
+-------------
+
+Building the sample extension requires JDK 1.5, available from Sun, and Apache ant version 1.7 or newer.
+
+
+-------------
+BUILDING
+-------------
+
+To build the sample, simply run
+
+> ant build
+
+-------------
+DEPLOYING
+-------------
+
+Copy the resulting jars in the dist folder into WEB-INF/lib of the ssc.war file.
+The dependencies axis-jaxrpc-1.3.jar is not be needed on full J2EE servers like 
+weblogic and jboss, but servers like tomcat need it.
+   
+The axis-saaj-1.3.jar is needed when JDK5 is used.
+
+-------------
+USING
+-------------
+
+Edit your project version within Software Security Center and enable JIRA 4 integration

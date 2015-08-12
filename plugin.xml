@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension point="com.fortify.awb.bugtracker">
+		<bugtracker class="com.fortify.sample.defecttracking.jira.Jira4BugTrackerPlugin" />
+	</extension>
+</plugin>

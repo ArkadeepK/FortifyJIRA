@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="BugTrackerPluginJira4" default="usage">
+
+	<property name="build.dir" location="${basedir}/build"/>
+	<property name="build.classes.dir" location="${build.dir}/classes"/>
+	<property name="dist.dir" location="${basedir}/dist"/>
+	<property name="src.dir" location="${basedir}/src"/>
+	<property name="lib.dir" location="${basedir}/lib"/>
+	<property name="jira4.plugin.id" value="com.hp.fortify.BugTrackerPluginJIRA4"/>
+
+	<path id="build.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+
+	<target name="usage">
+		<echo>
+			To clean:
+				ant clean
+
+			To build:
+				ant build
+
+			To do everything in one step:
+				ant all
+		</echo>
+	</target>
+
+	<target name="prep">
+		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${build.classes.dir}"/>
+		<mkdir dir="${dist.dir}"/>
+	</target>
+
+	<target name="build" depends="prep">
+		<javac source="1.5" target="1.5" debug="true" destdir="${build.classes.dir}">
+			<classpath refid="build.classpath"/>
+			<src location="${src.dir}"/>
+		</javac>
+		<jar file="${dist.dir}/bug-tracker-plugin-jira4.jar">
+			<fileset dir="${build.classes.dir}">
+				<include name="**/*.class"/>
+			</fileset>
+		</jar>
+		<copy todir="${dist.dir}">
+			<fileset dir="${lib.dir}">
+				<include name="*.jar"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="bundle" depends="build">
+		<jar jarfile="${dist.dir}/${jira4.plugin.id}.jar" manifest="META-INF/MANIFEST.MF">
+			<fileset dir="${build.classes.dir}" includes="**/*" />
+			<fileset dir="." includes="plugin*.*,lib/**/*" />
+		</jar>
+	</target>
+
+	<target name="clean">
+		<delete dir="${build.dir}" />
+		<delete dir="${dist.dir}"/>
+	</target>
+
+	<target name="all" depends="clean,build"/>
+</project>
